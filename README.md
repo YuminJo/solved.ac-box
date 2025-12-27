@@ -1,6 +1,8 @@
 <p align="center">
   <h3 align="center">📌✨solved.ac-box</h3>
-  <img width="462" height="158" alt="Image" src="https://github.com/user-attachments/assets/818b8ab0-d022-4143-b522-21d557374147" />
+  <p align="center">
+    <img width="462" height="158" alt="Image" src="https://github.com/user-attachments/assets/818b8ab0-d022-4143-b522-21d557374147" />
+  </p>
   <p align="center">브론즈부터 마스터까지 👑, 당신의 solved.ac 티어를 한눈에</p>
 </p>
 
@@ -20,7 +22,7 @@
 - 📈 현재 레이팅
 - ✅ 해결한 문제 수
 
-매일 자정 데이터를 업데이트하거나 수동 업데이트를 할 수 있습니다.
+매일 자정 데이터를 업데이트하며, 수동 업데이트를 할 수 있습니다.
 
 ## Setup
 
@@ -29,6 +31,7 @@
 1. Github Public Gist를 만들어주세요. (https://gist.github.com/)
 
    > Gist description은 비워주세요!
+   > 
    > Contents에는 아무 내용이나 적어주세요! (.만 찍어도 가능)
 
 2. `gist` 스코프만을 가지는 토큰을 만들고 복사해주세요. (https://github.com/settings/tokens/new)
@@ -54,11 +57,11 @@
 
 4. 최초 한 번 `Update Gist`를 실행시켜 주세요.
 
-<img width="336" height="348" alt="Image" src="https://github.com/user-attachments/assets/6fd13406-8ec6-4f99-9917-a2b53088a187" />
-
-<img width="1356" height="151" alt="Image" src="https://github.com/user-attachments/assets/d54ce740-a9e0-4030-901d-94f3507c179c" />
-
-<img width="388" height="243" alt="Image" src="https://github.com/user-attachments/assets/419e98f3-dc6b-4c48-ae00-763319715ae3" />
+  > 1. <img width="336" height="348" alt="Image" src="https://github.com/user-attachments/assets/6fd13406-8ec6-4f99-9917-a2b53088a187" />
+  >
+  > 2. <img width="1356" height="151" alt="Image" src="https://github.com/user-attachments/assets/d54ce740-a9e0-4030-901d-94f3507c179c" />
+  >
+  > 3. <img width="388" height="243" alt="Image" src="https://github.com/user-attachments/assets/419e98f3-dc6b-4c48-ae00-763319715ae3" />
 
 5. **Github Profile**에서 `Customize your pins`를 눌러 생성된 Gist를 고정해주세요.
 
