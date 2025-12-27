@@ -25,6 +25,8 @@ The build process:
 3. Minifies the output
 4. Removes intermediate files, keeping only `dist/index.js`
 
+**Note:** The `dist/` directory is in `.gitignore` and should not be committed. GitHub Actions runs `pnpm dev` (tsx directly) rather than using the built output.
+
 ## Architecture
 
 ### Code Structure
