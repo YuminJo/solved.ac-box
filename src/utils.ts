@@ -1,4 +1,4 @@
-import { FULL_WIDTH, TIERS, TTier } from "./common";
+import { TIERS, TTier } from "./common";
 
 /**
  * clone from https://github.com/matchai/waka-box
@@ -46,21 +46,4 @@ export function getPercent(start: number, end: number, current: number) {
     return 100.0;
   }
   return Number((((current - start) / (end - start)) * 100).toFixed(1));
-}
-
-// ------------------------------------------------------------------------------------------
-
-/**
- *
- * @param left 왼쪽에 위치할 텍스트
- * @param right 오른쪽에 위치할 텍스트
- * @param width 영역 너비
- * @returns 양 끝 정렬된 텍스트
- */
-export function between(
-  left: string,
-  right: string = "",
-  width: number = FULL_WIDTH
-) {
-  return left.padEnd(width - 1 - right.length, " ") + right;
 }

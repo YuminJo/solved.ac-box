@@ -6,7 +6,6 @@ import {
   getCurrTierInfo,
   getNextTierInfo,
   getPercent,
-  between,
 } from "./utils";
 import { FULL_WIDTH } from "./common";
 
@@ -47,22 +46,29 @@ config({ path: [".env"] });
     rating
   );
 
+  const firstLine = () => {
+    const left = `${label}, ${rating}p`;
+    if (!nextTierInfo) {
+      return left;
+    }
+    const right = `${nextTierInfo.label} 승급까지 ${
+      rating - nextTierInfo.startRating
+    }p`;
+    return left.padEnd(FULL_WIDTH - 1 - right.length, " ") + right;
+  };
+
   const lines = [
-    `${
-      !nextTierInfo
-        ? `${label}, ${rating}p`
-        : between(
-            `${label}, ${rating}`,
-            `${nextTierInfo.label} 승급까지 ${
-              rating - nextTierInfo.startRating
-            }p`,
-            FULL_WIDTH - 2
-          )
-    }`,
+    firstLine(),
     generateBarChart(percent, FULL_WIDTH),
     `${bio}`,
-    `${"✅ " + `문제 해결`.padEnd(5) + `${solvedCount}문제`.padStart(14)}    ${
-      "📈 " + `순위`.padEnd(5) + `${rank}등`.padStart(14)
+    `${
+      "✅ " +
+      "문제 해결".padEnd(5) +
+      `${solvedCount}문제`.padStart(14) +
+      " ".repeat(4) +
+      "📈 " +
+      "순위".padEnd(5) +
+      `${rank}등`.padStart(14)
     }`,
   ];
 
