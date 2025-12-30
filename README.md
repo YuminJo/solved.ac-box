@@ -1,7 +1,7 @@
 <p align="center">
   <h3 align="center">📌✨solved.ac-box</h3>
   <p align="center">
-    <img width="462" height="158" alt="Image" src="https://github.com/user-attachments/assets/818b8ab0-d022-4143-b522-21d557374147" />
+    <img width="462" height="183" alt="Image" src="https://github.com/user-attachments/assets/efe2bd1e-d0c4-43be-901a-1b7583f42b7b" />
   </p>
   <p align="center">브론즈부터 마스터까지 👑, 당신의 solved.ac 티어를 한눈에</p>
 </p>
@@ -18,9 +18,9 @@
 
 이 프로젝트는 solved.ac api를 사용하여 유저 정보를 가져오고, rest.js를 통해 GitHub Gist에 다음 정보를 업데이트합니다:
 
-- 🏷️ 소개(bio)
-- 📈 현재 레이팅
-- ✅ 해결한 문제 수
+- 🏷️ 자기소개 (Bio)
+- 📈 현재 티어 및 레이팅
+- ✅ 해결한 문제 수 및 순위
 
 매일 자정 데이터를 업데이트하며, 수동 업데이트를 할 수 있습니다.
 
