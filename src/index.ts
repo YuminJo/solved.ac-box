@@ -45,30 +45,32 @@ config({ path: [".env"] });
     nextTierInfo?.startRating ?? 3_000,
     rating
   );
-
+  const csCodingTitleLine = `🧪 C# Coding Test Status`;
+  
   const firstLine = () => {
     const left = `${label}, ${rating}p`;
     if (!nextTierInfo) {
       return left;
     }
-    const right = `${nextTierInfo.label} 승급까지 ${
+    const right = `Points to ${nextTierInfo.label} ${
       rating - nextTierInfo.startRating
     }p`;
     return left.padEnd(FULL_WIDTH - 2 - right.length, " ") + right;
   };
 
   const lines = [
+    csCodingTitleLine(),
     firstLine(),
     generateBarChart(percent, FULL_WIDTH),
     `${bio}`,
     `${
       "✅ " +
-      "문제 해결".padEnd(5) +
-      `${solvedCount}문제`.padStart(14) +
+      "Problems Solved".padEnd(5) +
+      `${solvedCount}Problems`.padStart(14) +
       " ".repeat(4) +
       "📈 " +
-      "순위".padEnd(5) +
-      `${rank}등`.padStart(14)
+      "Rank".padEnd(5) +
+      `${rank}th Place`.padStart(14)
     }`,
   ];
 
