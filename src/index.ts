@@ -70,7 +70,7 @@ config({ path: [".env"] });
       " ".repeat(4) +
       "📈 " +
       "Rank".padEnd(5) +
-      `${rank}th Place`.padStart(14)
+      `${rank}th`.padStart(14)
     }`,
   ];
 
