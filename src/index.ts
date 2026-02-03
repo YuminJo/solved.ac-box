@@ -59,7 +59,7 @@ config({ path: [".env"] });
   };
 
   const lines = [
-    csCodingTitleLine(),
+    csCodingTitleLine,
     firstLine(),
     generateBarChart(percent, FULL_WIDTH),
     `${bio}`,
